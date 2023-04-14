@@ -1,0 +1,27 @@
+<template>
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="select-01">
+            <template if:true={required}>
+                <abbr class="slds-required" title="required">* </abbr>
+            </template>
+            {label}
+        </label>
+        <div class="slds-form-element__control">
+            <div class="slds-select_container">
+                <select
+                    class="slds-select" 
+                    id="select-01" 
+                    disabled={disabled} 
+                    required={required} 
+                    onchange={handleChange}
+                    onfocus={handleFocus}
+                    onblur={handleBlur}
+                >
+                    <template for:each={options} for:item="option">
+                        <option key={option.value} value={option.value}>{option.label}</option>
+                    </template>
+                </select>
+            </div>
+        </div>
+    </div>
+</template>
