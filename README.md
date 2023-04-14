@@ -2,6 +2,7 @@
 _This component is intended to be used on **mobile devices**._
 
 The `ldn-input-select` enables single selection on a menu of options using the HTML select element and option elements.
+This component implements the [slds select blueprint](https://www.lightningdesignsystem.com/components/select/).
 
 Users can interact with the input field by directly tapping on the input field. This will open the native select menu.
 
